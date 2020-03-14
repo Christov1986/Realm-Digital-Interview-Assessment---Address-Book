@@ -10,13 +10,14 @@ Before running the program please perform the following actions
   - USE Christov_addressbook_db;
   - CREATE TABLE contacts (
     contact_id INT AUTO_INCREMENT PRIMARY KEY, 
-    name VARCHAR(50) NOT NULL, 
-    surname VARCHAR(50) NOT NULL
+    Firstame VARCHAR(50) NOT NULL, 
+    Surname VARCHAR(50) NOT NULL,
+    UNIQUE KEY `unique_contact` (`Firstname`,`Surname`)
     );
   - CREATE TABLE phone_no (
     phone_id INT AUTO_INCREMENT PRIMARY KEY, 
     contact_id INT NOT NULL, 
-    phone_number VARCHAR(20) NOT NULL,
+    Phone_number VARCHAR(20) NOT NULL,
     FOREIGN KEY (contact_id)
     REFERENCES contacts (contact_id)
     ON UPDATE RESTRICT ON DELETE CASCADE
@@ -24,7 +25,7 @@ Before running the program please perform the following actions
   - CREATE TABLE email (
     email_id INT AUTO_INCREMENT PRIMARY KEY, 
     contact_id INT NOT NULL, 
-    email VARCHAR(80) NOT NULL,
+    Email VARCHAR(80) NOT NULL,
     FOREIGN KEY (contact_id)
     REFERENCES contacts (contact_id)
     ON UPDATE RESTRICT ON DELETE CASCADE
