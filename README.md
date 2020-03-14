@@ -10,7 +10,7 @@ Before running the program please perform the following actions
   - USE Christov_addressbook_db;
   - CREATE TABLE contacts (
     contact_id INT AUTO_INCREMENT PRIMARY KEY, 
-    Firstame VARCHAR(50) NOT NULL, 
+    Firstname VARCHAR(50) NOT NULL, 
     Surname VARCHAR(50) NOT NULL,
     UNIQUE KEY `unique_contact` (`Firstname`,`Surname`)
     );
