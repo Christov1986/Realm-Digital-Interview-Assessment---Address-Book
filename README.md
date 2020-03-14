@@ -65,3 +65,11 @@ Before running the program please perform the following actions
     ((SELECT contact_id FROM contacts WHERE Firstname='Madelein' AND Surname='Voster'), 'madeleinvoster@flysaa.com'),
     ((SELECT contact_id FROM contacts WHERE Firstname='Wilma' AND Surname='Hefer'), 'wilma47hefer@gmail.com');
     
+4. Update the mySQL username and password in each of the connectors to your details
+    The current settings look as follows:
+      - "jdbc:mysql://localhost:3306/Christov_addressbook_db?useSSL=false", "root", "2hW3%gjHi$#w");
+    - Update "root" to your user name
+    - Update "2hW3%gjHi$#w" to your password
+    
+    This can be done with a replace function to speed up the process
+    
