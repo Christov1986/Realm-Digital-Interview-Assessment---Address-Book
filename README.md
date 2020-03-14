@@ -72,4 +72,9 @@ Before running the program please perform the following actions
     - Update "2hW3%gjHi$#w" to your password
     
     This can be done with a replace function to speed up the process
+
+5. Add the connector that I have included in the repository to your Classpath
+
+
+
     
